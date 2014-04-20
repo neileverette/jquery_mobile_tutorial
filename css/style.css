@@ -1,0 +1,43 @@
+
+body{
+	font-style: .8em;
+}
+
+p{
+	font-family:"Roboto";
+	font-weight: 100;
+	color: #666;
+	font-style: .8em;
+}
+
+h1{
+	font-weight: 300;
+	font-size: 2em;
+}
+
+.logo{
+	width: 25%;
+
+}
+
+#home .ui-controlgroup{
+	width: 60%;
+	margin: 0 auto;
+	max-width: 200px;
+}
+
+#home img{
+	width: 100%;
+	max-width: 375px;
+	display: block;
+	margin: 0 auto;
+}
+
+#home{
+	background-image: url(../images/background1.png)
+}
+
+#custom-border-radius .ui-btn-icon-notext.ui-corner-all {
+    -webkit-border-radius: .3125em;
+    border-radius: .3125em;
+}
