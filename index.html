@@ -7,58 +7,47 @@
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href='http://fonts.googleapis.com/css?family=Roboto:100,300,400' rel='stylesheet' type='text/css'>
-	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-	<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+	
+	
+	<!-- LOAD THE JAVASCRIPT -->		
+	<script src="js/jquery.js"></script>
+	<script src="js/jquerymobile.js"></script>
+	<script src="js/script.js"></script>
+
 	
 
 <meta charset="UTF-8">
 <title>jQuery Mobile</title>
-	<!--PLACE THIS SNIPPET INSIDE OF THE HEAD TAG-->
-	<meta name="viewport" content="width=device-width, user-scalable=yes">
+<meta name="viewport" content="width=device-width, user-scalable=yes">
 </head>
 
 <body>
 	
 	<!--HOME------------------------------------------------------------------------------------------------------>
-		
-		<!--HEADER-->
-		<header data-theme="b" data-role="header" data-position="fixed">
-		
-			<h1>Home</h1>
-			<a href="#" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all" data-rel="back">Back</a>
-			<a href="#info" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all  ui-icon-info ui-btn-icon-notext">Info</a></div>
-		
-		</header>
-
+	<section data-role="page" id="home" class="header_default footer_default" data-title="Home">
+	
 	
 		<!--CONTENT-->
 		<article  data-role="content">
 			<img class="logo" src="images/logo.png">
 		
 			<!--CONTROL GROUP FOR BUTTONS-->
-			<div data-role="controlgroup">
 				<a href="#blog" class="ui-btn ui-icon-edit ui-corner-all ui-btn-icon-left ui-btn-b">Blog</a>
 				<a href="#videos" class="ui-btn ui-icon-video ui-corner-all ui-btn-icon-left ui-btn-b">Videos</a>
 				<a href="#photos" class="ui-btn ui-icon-camera ui-corner-all ui-btn-icon-left ui-btn-b">Photos</a>
 				<a href="#tweets" class="ui-btn ui-icon-comment ui-corner-all ui-btn-icon-left ui-btn-b">Tweets</a>
-			</div>
 
 		</article>
-	
-		<!-- FOOTER -->
-		<footer data-role="footer" data-position="fixed"></footer>
+
+
 	
 	</section>
 	
 	<!--INFO------------------------------------------------------------------------------------------------------>
-	<section data-role="page" id="info">
+	<section data-role="page" id="info" class="header_default footer_default" data-title="Info">
 	
 		<!--HEADER-->
-		<header data-theme="b" data-role="header" data-position="fixed">
-		
-			<h1>Info</h1>
-			<a href="#" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all" data-rel="back">Back</a>
-			<a href="#info" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all  ui-icon-info ui-btn-icon-notext">Info</a></div>
+		<header data-theme="b" data-role="header" data-position="fixed" >
 		
 		</header>
 
@@ -70,20 +59,14 @@
 		
 		</article>
 	
-		<!-- FOOTER -->
-		<footer data-role="footer" data-position="fixed"></footer>
-	
 	</section>
 	
 	<!--BLOG------------------------------------------------------------------------------------------------------>
-	<section data-role="page" id="blog">
+	<section data-role="page" id="blog" class="header_default footer_default" data-title="Posts">
 	
 		<!--HEADER-->
-		<header data-theme="b" data-role="header" data-position="fixed">
-		
-			<h1>Blog</h1>
-			<a href="#" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all" data-rel="back">Back</a>
-			<a href="#info" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all  ui-icon-info ui-btn-icon-notext">Info</a></div>
+		<header data-theme="b" data-role="header" data-position="fixed" class="header_default">
+
 		
 		</header>
 
@@ -94,23 +77,11 @@
 			<p>This is some sample content</p>
 		
 		</article>
-	
-		<!-- FOOTER -->
-		<footer data-role="footer" data-position="fixed"></footer>
-	
+
 	</section>
 	
 	<!--VIDEOS------------------------------------------------------------------------------------------------------>
-	<section data-role="page" id="videos">
-	
-		<!--HEADER-->
-		<header data-theme="b" data-role="header" data-position="fixed"	>
-		
-			<h1>Blog</h1>
-			<a href="#" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all" data-rel="back">Back</a>
-			<a href="#info" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all  ui-icon-info ui-btn-icon-notext">Info</a></div>
-		
-		</header>
+	<section data-role="page" id="videos" class="header_default footer_default" data-title="Videos">
 
 	
 		<!--CONTENT-->
@@ -119,50 +90,25 @@
 			<p>This is some sample content</p>
 		
 		</article>
-	
-		<!-- FOOTER -->
-		<footer data-role="footer" data-position="fixed"></footer>
-	
+
 	</section>	
 		
 	<!--PHOTOS------------------------------------------------------------------------------------------------------>
-	<section data-role="page" id="photos">
-	
-		<!--HEADER-->
-		<header data-theme="b" data-role="header" data-position="fixed">
+	<section data-role="page" id="photos" class="header_default footer_default" data-title="Photos">
 		
-			<h1>Photos</h1>
-			<a href="#" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all" data-rel="back">Back</a>
-			<a href="#info" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all  ui-icon-info ui-btn-icon-notext">Info</a></div>
-		
-		</header>
-
-	
 		<!--CONTENT-->
 		<article  data-role="content">
 			<h1>This is the photos page</h1>
 			<p>This is some sample content</p>
 		
 		</article>
-	
-		<!-- FOOTER -->
-		<footer data-role="footer" data-position="fixed"></footer>
+
 	
 	</section>	
 
 
 	<!--TWEETS------------------------------------------------------------------------------------------------------>
-	<section data-role="page" id="tweets">
-	
-		<!--HEADER-->
-		<header data-theme="b" data-role="header" data-position="fixed">
-		
-			<h1>Tweets</h1>
-			<a href="#" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all" data-rel="back">Back</a>
-			<a href="#info" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all  ui-icon-info ui-btn-icon-notext">Info</a></div>
-		
-		</header>
-
+	<section data-role="page" id="tweets" class="header_default footer_default" data-title="Tweets">
 	
 		<!--CONTENT-->
 		<article  data-role="content">
@@ -170,13 +116,8 @@
 			<p>This is some sample content</p>
 		
 		</article>
-	
-		<!-- FOOTER -->
-		<footer data-role="footer" data-position="fixed"></footer>
-	
 
-<!-- LOAD THE JAVASCRIPT -->		
-<script src="js/script.js"></script>
+	
 
 </body>
 </html>
